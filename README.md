@@ -2,6 +2,28 @@
 Creates an interface for admin users to edit/create/delete users to companies or create/edit/delete companies in MoneyMob.
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+## Install
+First, clone this repository, then navigate to inside the moeymob-admin-web-app directory in a terminal window
+
+To install dependencies (requires yarn)
+```
+yarn install
+```
+
+## Run
+To run in development mode:
+```
+yarn start
+```
+
+## Usage
+If all has gone well you should be able to reach the home page on 
+```
+http://localhost:3000/
+```
+
+## Create-react-app
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
