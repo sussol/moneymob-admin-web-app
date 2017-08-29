@@ -7,11 +7,8 @@ export const CompanyList = (props) => (
     <List {...props}>
         <Datagrid>
             <TextField source="id" />
-          <TextField source="companyName" label="Company Name" />
-        <TextField source="datacentreURL" label ="Data Centre URL"/>
-            <TextField source="documentPath" />
-            <TextField source="datacentreCredentials" />
-            <TextField source="moneyworksCredentials" />
+            <TextField source="companyName" label="Company Name" />
+            <TextField source="datacentreURL" label ="Data Centre URL"/>
         </Datagrid>
     </List>
 );
