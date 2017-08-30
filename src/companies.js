@@ -1,7 +1,7 @@
 // in src/companies.js
 
 import React from 'react';
-import { List, Create, Edit, Datagrid, TextField, DisabledInput, SimpleForm, TextInput } from 'admin-on-rest';
+import { List, Create, Edit, Datagrid, TextField, DisabledInput, SimpleForm, TextInput, EditButton } from 'admin-on-rest';
 
 export const CompanyList = (props) => (
     <List {...props}>
@@ -9,6 +9,7 @@ export const CompanyList = (props) => (
             <TextField source="id" />
             <TextField source="companyName" label="Company Name" />
             <TextField source="datacentreURL" label ="Data Centre URL"/>
+          <EditButton />
         </Datagrid>
     </List>
 );
