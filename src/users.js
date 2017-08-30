@@ -1,7 +1,8 @@
 // in src/users.js
 
 import React from 'react';
-import { List, Edit, Create, Datagrid, TextField, ReferenceField, DisabledInput, LongTextInput, ReferenceInput, SelectInput, SimpleForm, TextInput, EditButton } from 'admin-on-rest';
+import AutoComplete from 'material-ui/AutoComplete';
+import { List, Edit, Create, Datagrid, TextField, ReferenceField, DisabledInput, LongTextInput, ReferenceInput, AutocompleteInput, SelectInput, SimpleForm, TextInput, EditButton } from 'admin-on-rest';
 
 export const UserList = (props) => (
     <List {...props}>
@@ -29,7 +30,9 @@ export const UserEdit = (props) => (
             <TextInput source="password"/>
             <LongTextInput source="moneymobConfig"/>
             <ReferenceInput label="company" source="companyId" reference="companies">
-                <SelectInput optionText="companyName" />
+                <AutocompleteInput optionText="companyName" options={{
+                      filter: AutoComplete.fuzzyFilter,
+                    }}/>
             </ReferenceInput>
         </SimpleForm>
     </Edit>
