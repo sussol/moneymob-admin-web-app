@@ -1,7 +1,7 @@
 // in src/users.js
 
 import React from 'react';
-import { List, Edit, Create, Datagrid, TextField, ReferenceField, DisabledInput, LongTextInput, ReferenceInput, SelectInput, SimpleForm, TextInput } from 'admin-on-rest';
+import { List, Edit, Create, Datagrid, TextField, ReferenceField, DisabledInput, LongTextInput, ReferenceInput, SelectInput, SimpleForm, TextInput, EditButton } from 'admin-on-rest';
 
 export const UserList = (props) => (
     <List {...props}>
@@ -11,6 +11,7 @@ export const UserList = (props) => (
             <ReferenceField label="company" source="companyId" reference="companies">
               <TextField source="companyName" />
             </ReferenceField>
+          <EditButton />
         </Datagrid>
     </List>
 );
