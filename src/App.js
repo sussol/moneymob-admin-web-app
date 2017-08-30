@@ -4,7 +4,7 @@ import React from 'react';
 import { jsonServerRestClient, Admin, Resource } from 'admin-on-rest';
 
 import { CompanyList, CompanyEdit, CompanyCreate } from './companies';
-import { UserList } from './users'
+import { UserList, UserEdit, UserCreate } from './users'
 
 const App = () => (
     <Admin restClient={jsonServerRestClient('http://localhost:4000/api')}>
