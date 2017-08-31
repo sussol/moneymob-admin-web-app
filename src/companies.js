@@ -28,7 +28,7 @@ export const CompanyCreate = (props) => (
 );
 
 const CompanyTitle = ({ record }) => {
-return <span>User {record ? `"${record.username}"` : ''}</span>;}
+return <span>Company {record ? `"${record.companyName}"` : ''}</span>;}
 
 export const CompanyEdit = (props) => (
     <Edit title={<CompanyTitle />} {...props}>

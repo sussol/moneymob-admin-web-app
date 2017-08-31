@@ -45,8 +45,10 @@ export const UserCreate = (props) => (
           <TextInput source="salespersonCode"/>
           <TextInput source="password"/>
           <LongTextInput source="moneymobConfig"/>
-          <ReferenceInput label="company" source="companyId" reference="companies">
-              <SelectInput optionText="companyName" />
+          <ReferenceInput label="company" source="companyId" reference="companies" allowEmpty>
+              <AutocompleteInput optionText="companyName" options={{
+                  filter: AutoComplete.fuzzyFilter,
+                }}/>
           </ReferenceInput>
         </SimpleForm>
     </Create>
