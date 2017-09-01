@@ -2,7 +2,7 @@
 
 import React from 'react';
 import AutoComplete from 'material-ui/AutoComplete';
-import { List, Edit, Create, Datagrid, TextField, ReferenceField, DisabledInput, LongTextInput, ReferenceInput, AutocompleteInput, SelectInput, SimpleForm, TextInput, EditButton } from 'admin-on-rest';
+import { List, Edit, Create, Datagrid, TextField, ReferenceField, DisabledInput, LongTextInput, ReferenceInput, AutocompleteInput, SimpleForm, TextInput, EditButton } from 'admin-on-rest';
 
 export const UserList = (props) => (
     <List {...props}>

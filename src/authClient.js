@@ -1,6 +1,5 @@
 // in src/authClient.js
 
-import React from 'react';
 import { AUTH_LOGIN, AUTH_LOGOUT, AUTH_ERROR, AUTH_CHECK } from 'admin-on-rest';
 
 export default (type, params) => {
