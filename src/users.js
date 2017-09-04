@@ -29,7 +29,7 @@ export const UserEdit = (props) => (
             <DisabledInput source="id" validate={required}/>
             <TextInput source="username" validate={required}/>
             <TextInput source="salespersonCode" validate={required}/>
-            <TextInput source="password" validate={required}/>
+            <TextInput source="password" type="password" validate={required}/>
             <LongTextInput source="moneymobConfig" validate={required}/>
             <ReferenceInput label="company" source="companyId" reference="companies" validate={required}>
                 <AutocompleteInput optionText="companyName" options={{
@@ -45,7 +45,7 @@ export const UserCreate = (props) => (
         <SimpleForm>
           <TextInput source="username" validate={required} />
           <TextInput source="salespersonCode" validate={required}/>
-          <TextInput source="password" validate={required}/>
+          <TextInput source="password" type="password" validate={required} />
           <LongTextInput source="moneymobConfig"/>
           <ReferenceInput label="company" source="companyId" reference="companies" validate={required} allowEmpty>
               <AutocompleteInput optionText="companyName" options={{
