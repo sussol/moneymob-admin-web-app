@@ -14,15 +14,17 @@ export const CompanyList = (props) => (
     </List>
 );
 
+const required = value => value ? undefined : 'Required';
+
 export const CompanyCreate = (props) => (
     <Create {...props}>
         <SimpleForm>
             <DisabledInput source="id" />
-            <TextInput source="companyName" label="Company Name" />
-            <TextInput source="datacentreURL" label ="Data Centre URL"/>
-            <TextInput source="documentPath" label ="Document Path"/>
-            <TextInput source="datacentreCredentials" label ="Data Centre Credentials"/>
-            <TextInput source="moneyworksCredentials" label ="MoneyWorks Credentials"/>
+          <TextInput source="companyName" label="Company Name" validate={required}/>
+            <TextInput source="datacentreURL" label ="Data Centre URL" validate={required}/>
+            <TextInput source="documentPath" label ="Document Path" validate={required}/>
+            <TextInput source="datacentreCredentials" label ="Data Centre Credentials" validate={required}/>
+            <TextInput source="moneyworksCredentials" label ="MoneyWorks Credentials" validate={required}/>
         </SimpleForm>
     </Create>
 );
@@ -34,11 +36,11 @@ export const CompanyEdit = (props) => (
     <Edit title={<CompanyTitle />} {...props}>
         <SimpleForm>
           <DisabledInput source="id" />
-          <TextInput source="companyName" label="Company Name" />
-          <TextInput source="datacentreURL" label ="Data Centre URL"/>
-          <TextInput source="documentPath" label ="Document Path"/>
-          <TextInput source="datacentreCredentials" label ="Data Centre Credentials"/>
-          <TextInput source="moneyworksCredentials" label ="MoneyWorks Credentials"/>
+          <TextInput source="companyName" label="Company Name" validate={required} />
+          <TextInput source="datacentreURL" label ="Data Centre URL" validate={required}/>
+          <TextInput source="documentPath" label ="Document Path" validate={required}/>
+          <TextInput source="datacentreCredentials" label ="Data Centre Credentials" validate={required}/>
+        <TextInput source="moneyworksCredentials" label ="MoneyWorks Credentials" validate={required}/>
         </SimpleForm>
     </Edit>
 );
