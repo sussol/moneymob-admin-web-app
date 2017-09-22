@@ -59,7 +59,7 @@ export const UserEdit = props => (
 
 export const UserCreate = props => (
   <Create {...props}>
-    <SimpleForm>
+    <SimpleForm redirect="list">
       <TextInput source="username" validate={required} />
       <TextInput source="salespersonCode" validate={required} />
       <TextInput source="password" type="password" validate={required} />
