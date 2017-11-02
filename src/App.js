@@ -7,7 +7,7 @@ import { CompanyList, CompanyEdit, CompanyCreate } from './companies';
 import { UserList, UserEdit, UserCreate } from './users';
 
 const httpClient = (url, options = {}) => {
-  return fetchUtils.fetchJson(url, { credentials: 'include' });
+  return fetchUtils.fetchJson(url, { ...options, credentials: 'include' });
 };
 const restClient = jsonServerRestClient(config.server, httpClient);
 
