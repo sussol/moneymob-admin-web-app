@@ -28,7 +28,7 @@ const required = value => (value ? undefined : 'Required');
 
 export const CompanyCreate = props => (
   <Create {...props}>
-    <SimpleForm>
+    <SimpleForm redirect="list">
       <TextInput source="companyName" label="Company Name" validate={required} />
       <TextInput source="datacentreURL" label="Data Centre URL" validate={required} />
       <TextInput source="documentPath" label="Document Path" validate={required} />
