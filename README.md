@@ -1,4 +1,4 @@
-# MoneyMobAdmin-web-app 
+# moneymob-admin-web-app 
 Creates an interface for admin users to edit/create/delete users to companies or create/edit/delete companies in MoneyMob.
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
