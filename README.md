@@ -22,6 +22,19 @@ If all has gone well you should be able to reach the home page on
 http://localhost:3000/
 ```
 
+## Goals
+
+- [ ] Display useful tablular formatted data in tables, and what ever else admin-on-rest gives for free
+- [ ] Can C.R.U.D users
+- [ ] Can C.R.U.D companies
+
+Wiki spec is: https://sussol.net/wiki/doku.php/moneyworks:moneymob:specs
+Backend is hosted on serverless/Amazon RDS: https://github.com/sussol/sussol-subscriptions
+
+Should migrate the serverless backend here as a node server.
+Will need full C.R.U.D implemented.
+
+---
 ## Create-react-app
 
 Below you will find some information on how to perform common tasks.<br>
