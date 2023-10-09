@@ -1,3 +1,6 @@
+# DED - DON'T USE
+See https://github.com/sussol/SubscriptionsWebAdmin instead
+
 # moneymob-admin-web-app 
 Creates an interface for admin users to edit/create/delete users to companies or create/edit/delete companies in MoneyMob.
 
